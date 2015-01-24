@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Level Maker</title>
+</head>
+<link rel="stylesheet" type="text/css" href="estilos.css" />
+<body>
+<h1>How to create your own Levels</h1>
+<div>
+<p></p> 
+<p>Phi Rainfall has the posibility to modify or create your own levels as an easy manner. </p>
+<p>To create a level for Phi Rainfall you must understand that each level for it's own consist in several blocks.</p>
+<p>Blocks help to group 10 seconds of the game into a level.</p>
+<p>&nbsp;</p>
+<p>The file format for the blocks is the next:</p>
+<p>1.-<span id="result_box" lang="en" xml:lang="en"><span title="">The block begins with a number &quot;n&quot;, symbolizing the number of enemies to create.</span></span></p>
+<p>2.-<span id="result_box2" lang="en" xml:lang="en"><span title="">The file continues with &quot;n&quot; lines. </span><span title="">Each specifies the characteristics of an enemy:</span></span></p>
+<p><span id="result_box3" lang="en" xml:lang="en"><span title="">Move the enemy, the enemy image, shot selection, type of bullet (image), color image</span></span></p>
+<p>Example:</p>
+<p>3<br />
+  1,2,3,3,4<br />
+  3,1,4,5,6<br />
+  5,2,4,3,7</p>
+<p>For the characteristics of a line is the next:</p>
+<p>Move the enemy: This specifies the movement of the enemy the range of movement comes from 1 to 9 the explanation is the next:</p>
+<p>1:Makes a movement that starts from the left side of the screen and advances in horizontal way, then it gets into a point where changes it's movement in vertical to the highest part of the screen.</p>
+<p>2:Makes a movement that starts from the right side of the screen and advances in horizontal way, then it gets into a point where changes it's movement in vertical to the highest part of the screen.</p>
+<p>3:Makes a diagonal movement appearing in the left side of the screen to the top side of the screen.</p>
+<p>4:Makes a diagonal movement appearing in the right side of the screen to the top side of the screen.</p>
+<p>5:Makes an horizontal movement appearing in the left side of the screen to the right side of the screen.</p>
+<p>6:Makes an horizontal movement appearing in the right side of the screen to the left side of the screen.</p>
+<p>7:Makes a vertical movement appearing in the highest part of the screen to the lowest part.</p>
+<p>8:Makes a vertical movement appearing in the lowest part of the screen to the highest part.</p>
+<p>Enemy image:</p>
+<p>The range of the image goes from 1 to 4. Escentially it only changes the color of the fairies because it's the same type of image.</p>
+<p>Shot selection:</p>
+<p>This element performs the type of bullet the enemy will launch. The range comes from 1 to 7:</p>
+<p>1:Bullet Direct-This kind of bullet attacks directly to the player, each bullet goest where the actual player is.</p>
+<p>2:Bullet Direct Variable Destiny-This kind of bullet appears in a random point of the screen and starts to launch several bullets in  form of a rain.</p>
+<p>3:Bullet Elipse-This kind of bullet makes an elipse that increments its radius until it goes outside of the screen or kills the player.</p>
+<p>4: Bullet Inverse Elipse-This kind of bullet makes an elipse that starts from outside the window and decreases its radius. When it gets to the center point it exchanges the radius from decrement to incrmenet becoming a normal elipse.</p>
+<p>5: Bullet Laser-This bullet creates a line that comes from the highest part of the screen to the lowest part of the screen and if used the image laser.png remakes a laser that can be used in several ways.</p>
+<p>6: Bullet Ring-This kind of bullet makes a circle that increments its radius until it goes outside of the screen or kills the player.</p>
+<p>7: Bullet Inverse Ring-This kind of bullet makes an ring that starts from outside the window and decreases its radius. When it gets to the center point it exchanges the radius from decrement to incrmenet becoming a normal ring.</p>
+<p>Type of bullet:</p>
+<p>To view which number corresponds to what image you must open the file &quot;bibliotecaimagenes.txt&quot;:</p>
+<p><img src="imagenes/Imagen1.png" width="620" height="408" /></p>
+<p>After this you must open the folder &quot;/imagenes&quot; and from here you can match which images you could use with the termination or word bullet in the name of the image. This returns the number that is used in the block:</p>
+<p><img src="imagenes/Imagen2.png" width="430" height="727" /></p>
+<p>The lines as shown for example is:</p>
+<p>0,bullet,17,bala_roca.png,1</p>
+<p>In this example if the image you want to use is rock you must type in the block (17)</p>
+<p>So for each type of bullet the range between the images comes from 1 to 17.</p>
+<p>Color Image:</p>
+<p>The next image shows how a bullet is distributed for its colors:</p>
+<p><img src="imagenes/bala.png" width="396" height="32" /></p>
+<p>To select the color of an image you must count from left to right beginning with 0 and that will be the number to use.</p>
+<p>Example:</p>
+<p>The required bullet is the red one so using the previous context it will be:</p>
+<p>2</p>
+<p>The required bullet is the cyan one:</p>
+<p>7</p>
+<p>&nbsp;</p>
+<p>For all that was explained you can modify or create your own levels</p>
+<p>One of the important thing is that you can overwrite the folder with lvl(X) son it will influence directly to the level.</p>
+<p>Enjoy!!!</p>
+</div>
+<div class="regresar">
+	<p><a href="index.html">Back to Index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+How to Install Fi Rainfall:
+
+1.- Simply copy al the directories and files in the CD into a new file and rename it Rainfall
+2.- Execute Rainfall.jar to execute the game and start playing.

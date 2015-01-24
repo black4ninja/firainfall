@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+h1{
+	font:"Comic Sans MS";
+	font-style:oblique;		
+	font-size:x-large;
+	color:#FFF;
+	text-align:center;
+	background-image:url(imagenes/fondo2.png);
+	}
+h2{
+	font:"Comic Sans MS";
+	font-style:oblique;		
+	font-size:xx-large;
+	color:#906;
+	text-align:center;
+	background-image:url(imagenes/fondo2.png);
+	}
+body{
+		background:#000;
+		font-family:"Comic Sans MS";
+		font-size:medium;
+		color:#FFF;
+		padding-right:300px;
+		padding-left:300px;
+	}
+.indice{
+	font:"Comic Sans MS";
+	font-style:italic;
+	font-size:large;
+	color:#003;
+	text-align:center;
+	background-image:url(imagenes/fondo3.png);
+	}
+.regresar{
+	font:"Comic Sans MS";
+	font-style:italic;
+	font-size:large;
+	color:#003;
+	text-align:right;
+	padding-right:0px;
+	padding-left:0px;
+		}
+.parrafo{
+	font:"Comic Sans MS";
+	font-size:medium;
+	color:#FFF;
+	text-align:justify;
+		}
+.flotadorIzquierda{
+	float:left;
+	}
+.flotadorDerecha{
+	float:right;
+	}
+.cursiva{
+	font:"Comic Sans MS";
+	font-style:oblique;
+	}
